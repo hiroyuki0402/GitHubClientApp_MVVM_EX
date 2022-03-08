@@ -16,6 +16,8 @@
 		3B18123727D6477300D93D08 /* GitHubClientApp_MVVM_EXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18123627D6477300D93D08 /* GitHubClientApp_MVVM_EXTests.swift */; };
 		3B18124127D6477300D93D08 /* GitHubClientApp_MVVM_EXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18124027D6477300D93D08 /* GitHubClientApp_MVVM_EXUITests.swift */; };
 		3B18124327D6477300D93D08 /* GitHubClientApp_MVVM_EXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18124227D6477300D93D08 /* GitHubClientApp_MVVM_EXUITestsLaunchTests.swift */; };
+		3B18125127D793FA00D93D08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18125027D793FA00D93D08 /* User.swift */; };
+		3B18125327D7952F00D93D08 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18125227D7952F00D93D08 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3B18123C27D6477300D93D08 /* GitHubClientApp_MVVM_EXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubClientApp_MVVM_EXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B18124027D6477300D93D08 /* GitHubClientApp_MVVM_EXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClientApp_MVVM_EXUITests.swift; sourceTree = "<group>"; };
 		3B18124227D6477300D93D08 /* GitHubClientApp_MVVM_EXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClientApp_MVVM_EXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B18125027D793FA00D93D08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B18125227D7952F00D93D08 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		3B18121E27D6477200D93D08 /* GitHubClientApp_MVVM_EX */ = {
 			isa = PBXGroup;
 			children = (
+				3B18124F27D793D300D93D08 /* Model */,
 				3B18121F27D6477200D93D08 /* AppDelegate.swift */,
 				3B18122127D6477200D93D08 /* SceneDelegate.swift */,
 				3B18122327D6477200D93D08 /* ViewController.swift */,
@@ -125,6 +130,15 @@
 				3B18124227D6477300D93D08 /* GitHubClientApp_MVVM_EXUITestsLaunchTests.swift */,
 			);
 			path = GitHubClientApp_MVVM_EXUITests;
+			sourceTree = "<group>";
+		};
+		3B18124F27D793D300D93D08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B18125027D793FA00D93D08 /* User.swift */,
+				3B18125227D7952F00D93D08 /* API.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B18125127D793FA00D93D08 /* User.swift in Sources */,
 				3B18122427D6477200D93D08 /* ViewController.swift in Sources */,
 				3B18122027D6477200D93D08 /* AppDelegate.swift in Sources */,
 				3B18122227D6477200D93D08 /* SceneDelegate.swift in Sources */,
+				3B18125327D7952F00D93D08 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
