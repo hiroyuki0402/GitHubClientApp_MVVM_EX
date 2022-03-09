@@ -11,6 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        API().getUser { result in
+            print(result)
+        }
         // Do any additional setup after loading the view.
     }
 

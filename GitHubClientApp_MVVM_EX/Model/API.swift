@@ -42,18 +42,16 @@ class API {
                 complision(.failure(err))
             } else if let data = data {
                 do {
-
-                let jsonOptional = try JSONDecoder().decode(User.self, from: data)
+                    let jsonOptional = try JSONDecoder().decode(User.self, from: data)
                     print(jsonOptional)
-                    complision(.success(jsonOptional.)
-
+                    complision(.success([jsonOptional.self]))
                 } catch {
-
+                    complision(.failure(APIError.unknown))
                 }
             } else {
                 complision(.failure(APIError.unknown))
             }
-
+            
         }
         task.resume()
 
